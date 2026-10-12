@@ -1,0 +1,14 @@
+**/bin/
+**/obj/
+.vs/
+.dotnet-sdk/
+artifacts/
+deployment/
+**/logs/
+**/status.json
+**/status.json.tmp
+**/*.jsonl
+**/*.bak
+**/*.backup-*
+**/appsettings.Local.json
+**/appsettings.Production.json

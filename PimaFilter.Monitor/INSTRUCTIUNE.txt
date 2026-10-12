@@ -1,0 +1,1 @@
+See README.md in the repository root. Monitor route mappings come from service appsettings.json.

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="PimaFilter/PimaFilter.csproj" />
+  <Project Path="PimaFilter.Monitor/PimaFilter.Monitor.csproj" />
+  <Project Path="PimaFilter.Tests/PimaFilter.Tests.csproj" />
+  <Project Path="PimaFilter.Monitor.Tests/PimaFilter.Monitor.Tests.csproj" />
+</Solution>
