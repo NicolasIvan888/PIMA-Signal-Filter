@@ -56,14 +56,15 @@ if ($null -ne $copyError) {
     throw $copyError
 }
 
-$shortcutPath = "C:\Users\Public\Desktop\SurGard Signal Filter Monitor.lnk"
+$shortcutPath = "C:\Users\Public\Desktop\PIMA Signal Filter Monitor.lnk"
 $shell = New-Object -ComObject WScript.Shell
 $shortcut = $shell.CreateShortcut($shortcutPath)
 $shortcut.TargetPath = $installedExe
 $shortcut.IconLocation = "$installedExe,0"
 $shortcut.WorkingDirectory = $installFull
-$shortcut.Description = "Monitor si administrare blacklist pentru SurGard Signal Filter"
+$shortcut.Description = "Monitor si administrare blacklist pentru PIMA Signal Filter"
 $shortcut.Save()
+Remove-Item -LiteralPath "C:\Users\Public\Desktop\SurGard Signal Filter Monitor.lnk" -Force -ErrorAction SilentlyContinue
 Remove-Item -LiteralPath "C:\Users\Public\Desktop\PIMA Filter Monitor.lnk" -Force -ErrorAction SilentlyContinue
 
 Write-Host "Monitor instalat: $installedExe"

@@ -4,7 +4,7 @@ param(
     [string]$InstallDirectory = "C:\Program Files\PimaFilter",
     [string]$DataDirectory = "C:\ProgramData\PimaFilter",
     [string]$ServiceName = "PimaFilter",
-    [string]$DisplayName = "SurGard Signal Filter",
+    [string]$DisplayName = "PIMA Signal Filter",
     [ValidateNotNullOrEmpty()]
     [string]$BindAddress = "127.0.0.1",
     [ValidateNotNullOrEmpty()]

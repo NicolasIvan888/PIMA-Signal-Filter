@@ -14,7 +14,7 @@ var builder = Host.CreateApplicationBuilder(new HostApplicationBuilderSettings
 
 builder.Services.AddWindowsService(options =>
 {
-    options.ServiceName = "SurGard Signal Filter";
+    options.ServiceName = "PimaFilter";
 });
 
 builder.Services
@@ -66,7 +66,7 @@ builder.Services
         }
 
         return true;
-    }, "Configuratia SurGard Signal Filter este invalida.")
+    }, "Configuratia PIMA Signal Filter este invalida.")
     .ValidateOnStart();
 
 builder.Services.AddSingleton<DailyAuditLog>();

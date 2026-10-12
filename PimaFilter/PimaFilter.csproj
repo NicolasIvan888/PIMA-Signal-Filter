@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>PimaFilter</RootNamespace>
     <AssemblyName>PimaFilter.Service</AssemblyName>
-    <Version>0.5.0</Version>
+    <Version>0.5.1</Version>
     <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
   </PropertyGroup>
 

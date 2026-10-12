@@ -2,7 +2,7 @@
 param(
     [string]$InstallDirectory = "C:\Program Files\PimaFilter",
     [string]$ServiceName = "PimaFilter",
-    [string]$DisplayName = "SurGard Signal Filter"
+    [string]$DisplayName = "PIMA Signal Filter"
 )
 
 $ErrorActionPreference = "Stop"

@@ -1,4 +1,4 @@
-# SurGard Signal Filter
+# PIMA Signal Filter
 
 Windows TCP relay and configurable account blacklist for PIMA Guard / Andromeda alarm frames, with a Windows Forms operational monitor.
 
@@ -21,8 +21,8 @@ Windows and the .NET 10 SDK are required for the desktop monitor. The service ca
 From the repository root:
 
 ```powershell
-dotnet restore SurGard-Signal-Filter.slnx --configfile NuGet.Config
-dotnet build SurGard-Signal-Filter.slnx --configuration Release --no-restore
+dotnet restore PIMA-Signal-Filter.slnx --configfile NuGet.Config
+dotnet build PIMA-Signal-Filter.slnx --configuration Release --no-restore
 dotnet run --project PimaFilter.Tests --configuration Release --no-build
 dotnet run --project PimaFilter.Monitor.Tests --configuration Release --no-build
 ```
@@ -70,15 +70,15 @@ dotnet run --project PimaFilter
 Publish self-contained Windows executables using the included scripts:
 
 ```powershell
-.\PimaFilter\scripts\Package-Deployment.ps1 -Version 0.5.0
-.\PimaFilter.Monitor\scripts\Package-Monitor.ps1 -Version 0.5.0
+.\PimaFilter\scripts\Package-Deployment.ps1 -Version 0.5.1
+.\PimaFilter.Monitor\scripts\Package-Monitor.ps1 -Version 0.5.1
 ```
 
 Configure the published service's `appsettings.json` before installation. In an administrator PowerShell window:
 
 ```powershell
-.\PimaFilter\scripts\Install-Service.ps1 -SourceDirectory '.\artifacts\PimaFilter-win-x64-0.5.0' -BindAddress 'YOUR_LOCAL_BIND_ADDRESS'
-.\PimaFilter.Monitor\scripts\Install-Monitor.ps1 -SourceDirectory '.\artifacts\PimaFilter-Monitor-win-x64-0.5.0\' -StartMonitor
+.\PimaFilter\scripts\Install-Service.ps1 -SourceDirectory '.\artifacts\PimaFilter-win-x64-0.5.1' -BindAddress 'YOUR_LOCAL_BIND_ADDRESS'
+.\PimaFilter.Monitor\scripts\Install-Monitor.ps1 -SourceDirectory '.\artifacts\PimaFilter-Monitor-win-x64-0.5.1\' -StartMonitor
 ```
 
 The service installation defaults to Monitor mode and does not start automatically during installation unless `-StartService` is supplied. Configure permitted source addresses before exposing a listening port. The installation script adds firewall allow rules only for routes with source restrictions.

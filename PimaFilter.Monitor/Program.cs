@@ -16,7 +16,7 @@ internal static class Program
         }
         catch (Exception exception)
         {
-            MessageBox.Show($"Cannot load route configuration: {exception.Message}", "SurGard Signal Filter", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show($"Cannot load route configuration: {exception.Message}", "PIMA Signal Filter", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return;
         }
 

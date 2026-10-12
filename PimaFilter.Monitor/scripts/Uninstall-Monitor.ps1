@@ -9,7 +9,7 @@ if (-not $installFull.EndsWith("\PimaFilter\Monitor", [StringComparison]::Ordina
     throw "Director de dezinstalare neasteptat: $installFull"
 }
 
-$shortcutPath = "C:\Users\Public\Desktop\SurGard Signal Filter Monitor.lnk"
+$shortcutPath = "C:\Users\Public\Desktop\PIMA Signal Filter Monitor.lnk"
 if ($PSCmdlet.ShouldProcess($shortcutPath, "Sterge scurtatura")) {
     Remove-Item -LiteralPath $shortcutPath -Force -ErrorAction SilentlyContinue
     Remove-Item -LiteralPath "C:\Users\Public\Desktop\PIMA Filter Monitor.lnk" -Force -ErrorAction SilentlyContinue

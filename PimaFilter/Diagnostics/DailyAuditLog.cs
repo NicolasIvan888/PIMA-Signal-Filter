@@ -94,7 +94,7 @@ public sealed class DailyAuditLog
         {
             // Logging must never interrupt alarm delivery.
             System.Diagnostics.Trace.WriteLine(
-                $"SurGard Signal Filter log failure ({category}): {exception}");
+                $"PIMA Signal Filter log failure ({category}): {exception}");
         }
     }
 

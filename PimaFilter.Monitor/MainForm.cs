@@ -54,7 +54,7 @@ public sealed class MainForm : Form
     {
         _reader = new MonitorDataReader(dataDirectory);
         _blacklistStore = new BlacklistStore(dataDirectory);
-        Text = "SurGard Signal Filter Monitor";
+        Text = "PIMA Signal Filter Monitor";
         StartPosition = FormStartPosition.CenterScreen;
         MinimumSize = new Size(1080, 720);
         Size = new Size(1440, 900);
@@ -114,7 +114,7 @@ public sealed class MainForm : Form
         var panel = new Panel { Dock = DockStyle.Fill };
         var title = new Label
         {
-            Text = "SURGARD SIGNAL FILTER",
+            Text = "PIMA SIGNAL FILTER",
             Font = new Font("Segoe UI Semibold", 19f, FontStyle.Bold),
             ForeColor = TextColor,
             AutoSize = true,
@@ -762,7 +762,7 @@ public sealed class MainForm : Form
     {
         if (ObjectCodeMapper.Targets.Count == 0)
         {
-            MessageBox.Show("Configure at least one route before adding an object.", "SurGard Signal Filter");
+            MessageBox.Show("Configure at least one route before adding an object.", "PIMA Signal Filter");
             return;
         }
         using var dialog = new BlacklistEntryDialog();

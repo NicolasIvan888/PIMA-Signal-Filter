@@ -1,6 +1,6 @@
 [CmdletBinding()]
 param(
-    [string]$Version = "0.5.0",
+    [string]$Version = "0.5.1",
     [string]$Runtime = "win-x64",
     [switch]$NoRestore
 )
